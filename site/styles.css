@@ -303,6 +303,8 @@ input::placeholder { color: var(--text3); opacity: 1; }
 .site-footer { border-top: 1px solid var(--border); }
 .footer-inner { padding-top: 32px; padding-bottom: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; font-size: 15px; color: var(--text2); }
 .footer-inner a { font-weight: 600; }
+.footer-credits { flex-basis: 100%; margin: 0; font-size: 13px; line-height: 1.6; }
+.footer-inner .footer-credits a { font-weight: 500; color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 .footer-brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 800; }
 
 /* Undersider (privatlivspolitik, 404) */
