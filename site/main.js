@@ -14,15 +14,16 @@
     mad: ['Mad & madspild', 'M19.5 4.5c-9 0-14.5 4.2-14.5 10.5 0 1.9.6 3.5 1.5 4.6M19.5 4.5c0 9.5-3 15-9 15-1.5 0-2.9-.4-4-1.1M19.5 4.5 9 15']
   };
 
+  // author.avatar: valgfrit profilbillede (~96px kvadratisk); uden vises initialer.
   // img: valgfri sti til et foto (fx '/img/tips/1.webp', ~660px bredt). Uden img vises et mønstret felt i kategoriens farve.
   const TIPS = [
-    {id: 1, cat: 'el', type: 'Hack', validity: 'Altid', effort: '5 min', amount: 1200, unit: 'kr/år', size: 'M', title: 'Flyt opvask og vask til de billige timer med timepris på el', score: 412, comments: 38, works: 91, photo: 'åben opvaskemaskine', img: '/img/tips/1.webp', author: {name: 'Mette K.', initials: 'MK', tone: 'forsikring'}},
-    {id: 2, cat: 'streaming', type: 'Vane', validity: 'Altid', effort: '5 min', amount: 1500, unit: 'kr/år', size: 'M', title: 'Hav kun én streamingtjeneste ad gangen – skift når serien er set', score: 356, comments: 52, works: 84, photo: 'fjernbetjening og tv', img: '/img/tips/2.webp', author: {name: 'Jonas B.', initials: 'JB', tone: 'mad'}},
-    {id: 3, cat: 'dagligvarer', type: 'Deal', validity: '3 dage tilbage', expiring: true, effort: '2 min', amount: 60, unit: 'kr', size: 'S', title: '3 for 2 på kaffe – gælder til og med søndag', score: 98, comments: 12, works: 96, photo: 'kaffeposer på hylde', img: '/img/tips/3.webp', author: {name: 'Sara L.', initials: 'SL', tone: 'skat'}},
+    {id: 1, cat: 'el', type: 'Hack', validity: 'Altid', effort: '5 min', amount: 1200, unit: 'kr/år', size: 'M', title: 'Flyt opvask og vask til de billige timer med timepris på el', score: 412, comments: 38, works: 91, photo: 'åben opvaskemaskine', img: '/img/tips/1.webp', author: {name: 'Mette K.', initials: 'MK', avatar: '/img/avatars/mette.webp', tone: 'forsikring'}},
+    {id: 2, cat: 'streaming', type: 'Vane', validity: 'Altid', effort: '5 min', amount: 1500, unit: 'kr/år', size: 'M', title: 'Hav kun én streamingtjeneste ad gangen – skift når serien er set', score: 356, comments: 52, works: 84, photo: 'fjernbetjening og tv', img: '/img/tips/2.webp', author: {name: 'Jonas B.', initials: 'JB', avatar: '/img/avatars/jonas.webp', tone: 'mad'}},
+    {id: 3, cat: 'dagligvarer', type: 'Deal', validity: '3 dage tilbage', expiring: true, effort: '2 min', amount: 60, unit: 'kr', size: 'S', title: '3 for 2 på kaffe – gælder til og med søndag', score: 98, comments: 12, works: 96, photo: 'kaffeposer på hylde', img: '/img/tips/3.webp', author: {name: 'Sara L.', initials: 'SL', avatar: '/img/avatars/sara.webp', tone: 'skat'}},
     {id: 4, cat: 'forsikring', type: 'Skift', validity: 'Altid', effort: '30 min', amount: 2000, unit: 'kr/år', size: 'L', title: 'Ring og bed om en ny pris på din bilforsikring hvert år', score: 287, comments: 24, works: 79, photo: 'bilnøgler og telefon', img: '/img/tips/4.webp', author: {kind: 'anon', name: 'Anonym sparer'}},
     {id: 5, cat: 'skat', type: 'Rettighed', validity: 'Altid', effort: '15 min', amount: 3500, unit: 'kr/år', size: 'L', title: 'Tjek om du kan få befordringsfradrag – over 24 km tur/retur om dagen', score: 241, comments: 17, works: 88, photo: 'pendler i tog', img: '/img/tips/5.webp', author: {kind: 'editor', name: 'Spareklubben-redaktionen'}},
-    {id: 6, cat: 'mad', type: 'Hack', validity: 'Altid', effort: '5 min', amount: 2400, unit: 'kr/år', size: 'L', title: 'Køb overskudsmad fra bagere og butikker via apps – aftensmad til en brøkdel', score: 199, comments: 29, works: 90, photo: 'bagerpose med brød', img: '/img/tips/6.webp', author: {name: 'Ali R.', initials: 'AR', tone: 'streaming'}},
-    {id: 7, cat: 'dagligvarer', type: 'Rabat', validity: 'Altid', effort: '5 min', amount: 10, upTo: true, unit: '%', size: 'M', title: 'Få penge tilbage på dine indkøb med supermarkedets medlemsapp', score: 174, comments: 21, works: 93, photo: 'indkøbskurv', img: '/img/tips/7.webp', author: {name: 'Hanne M.', initials: 'HM', tone: 'el'}},
+    {id: 6, cat: 'mad', type: 'Hack', validity: 'Altid', effort: '5 min', amount: 2400, unit: 'kr/år', size: 'L', title: 'Køb overskudsmad fra bagere og butikker via apps – aftensmad til en brøkdel', score: 199, comments: 29, works: 90, photo: 'bagerpose med brød', img: '/img/tips/6.webp', author: {name: 'Ali R.', initials: 'AR', avatar: '/img/avatars/ali.webp', tone: 'streaming'}},
+    {id: 7, cat: 'dagligvarer', type: 'Rabat', validity: 'Altid', effort: '5 min', amount: 10, upTo: true, unit: '%', size: 'M', title: 'Få penge tilbage på dine indkøb med supermarkedets medlemsapp', score: 174, comments: 21, works: 93, photo: 'indkøbskurv', img: '/img/tips/7.webp', author: {name: 'Hanne M.', initials: 'HM', avatar: '/img/avatars/hanne.webp', tone: 'el'}},
     {id: 9, cat: 'el', type: 'Vane', validity: 'Altid', effort: '2 min', amount: 300, unit: 'kr/år', size: 'S', title: 'Sluk standby på tv og konsol med en stikdåse med afbryder', score: 88, comments: 6, works: 89, photo: 'stikdåse med afbryder', img: '/img/tips/9.webp', author: {kind: 'editor', name: 'Spareklubben-redaktionen'}}
   ];
 
@@ -69,7 +70,7 @@
         <div class="tip-meta">
           <span class="chip" style="background:${catBg};color:${catFg}">${svg(catIcon, 16, 2)}<span>${esc(catLabel)}</span></span>
           ${t.expiring ? '<span class="chip chip-limited">Tidsbegrænset</span>' : ''}
-          <span class="author"><span class="author-av" style="background:${avBg};color:${avFg}" aria-hidden="true">${esc(avText)}</span><span class="author-name">${esc(a.name || '')}</span></span>
+          <span class="author">${a.avatar ? `<img class="author-av" src="${esc(a.avatar)}" alt="" width="22" height="22" loading="lazy">` : `<span class="author-av" style="background:${avBg};color:${avFg}" aria-hidden="true">${esc(avText)}</span>`}<span class="author-name">${esc(a.name || '')}</span></span>
         </div>
         <${headingTag} class="tip-title">${esc(t.title)}</${headingTag}>
         <div class="tip-amount">
